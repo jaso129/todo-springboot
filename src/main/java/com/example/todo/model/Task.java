@@ -27,9 +27,7 @@ public class Task {
         this.createdAt = LocalDateTime.now();
     }
 
-    public Task(){
-
-    }
+    public Task(){}
 
     public String getTitle(){
         return title;
@@ -37,5 +35,13 @@ public class Task {
 
     public void setTitle(String title){
         this.title = title;
+    }
+
+    public Long getId(){
+        return id;
+    }
+
+    public Boolean getCompleted() {
+        return completed;
     }
 }
